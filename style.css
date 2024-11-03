@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Passion+One:wght@400;700;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
+:root {
+    --font1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font2: "Dancing Script", cursive;
+    --font3: "Roboto Condensed", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: rgb(54, 54, 54);
+    min-height: 100vh;
+    font-family:var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: var(--font3);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 30px;
+    font-size: 4vw;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.6em;
+    padding-left: 20px;
+    font-family:var(--font2);
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 1.4em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image > p {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+section.image#image1 {
+    color: white;
+    background-image: url(imagens/cat-5320572_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+section.image#image2 {
+    color: white;
+    background-image: url(imagens/cat-7319589_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 6px;
+}
